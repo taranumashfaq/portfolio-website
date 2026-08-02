@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taranum-Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .about {
+            display: flex;
+            flex-direction: column
+        } 
+        
+        .about h1{
+            margin-bottom: 40px;
+        }
+            
+        .skills {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 0px;
+            margin: 0px;
+            justify-content: space around;
+            color: white;   
+            margin-top: 40px;        
+       }
+       .skills-list {
+        padding: 0px;
+        margin: 0px;
+       }
+
+       .projects {
+        display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 0px;
+            margin: 0px;
+            justify-content: space around;
+            color: white;   
+            margin-top: 40px;        
+
+       }
+
+       .certifications {
+        display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 0px;
+            margin: 0px;
+            justify-content: space around;
+            color: white;   
+            margin-top: 40px;
+       }
+
+       .education {
+        display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 0px;
+            margin: 0px;
+            justify-content: space around;
+            color: white;   
+            margin-top: 40px;
+       }
+
+       .education-list {
+        padding: 0px;
+        margin: 0px;
+       }
+       
+       .contact {
+        display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 0px;
+            margin: 0px;
+            justify-content: space-around;
+            color: white;   
+            margin-top: 40px;
+       }
+
+       .contact-list {
+        padding: 0px;
+        margin: 0px;
+       }
+        
+        body {
+            background-color: rgb(1, 19, 14);
+            color: rgb(255, 255, 255);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(2, 41, 21);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(145, 145, 104);
+            font-size: 1.06;
+        }
+
+        main hr{
+            border: 0;
+         background: rgb(145, 145, 104);
+         height: 1.2px;
+         margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rmp;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 40%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .rightSection img {
+            width: 56%;
+        }
+
+        .purple {
+            color: rgb(145, 145, 104);
+        }
+
+        #element {
+            color: rgb(145, 145, 104);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+        .thirdSection {
+            max-width: 80vw;
+            margin-top: 80px;
+        }
+        .forthSection {
+            max-width: 80vw;
+            margin-top: 80px;
+        }
+         
+        @media (max-width: 768px) {
+            .firstSection {
+                display: flex;
+                flex-direction: column-reverse;
+                text-align:center;
+                padding: 40px 20px;         
+            }
+        }
+            .firstSection >div {
+                width: 100%;
+               
+            }
+            .about-skills {
+                flex-direction: column;
+            }
+    
+            h1 {
+                font-size: 22px;
+                line-height: 1.7;
+                white-space: normal;
+            }              
+            .rightSection img{
+                width: 150px;
+                height: 150px;
+                margin: 20px auto;
+            }
+
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Taranum's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, I'm <span class="purple">Taranum</span>
+                <div>A Passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+
+         <div class="about">
+            <h1>About</h1>
+            <p>
+                I am a passionate Software Developer and Python learner with a strong interest in 
+                creating modern, responsive and user friendly websites. I enjoy turning ideas into 
+                clean and functional web experiences while continously learning new technologies 
+                and improving my skills through real world projects.
+            </p>
+        </div>
+        <div class="skills">
+            <h1>Skills</h1>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>Github (Basics)</li>
+                <li>VS Code</li>
+            </ul>
+        </div>   
+
+            <div class="projects">
+                <h1>Projects</h1>
+                <ul class="projects">
+                    <li><a href="C:\Users\Admin\Documents\portfolio website\portfolio website\index.html">Portfolio Website</a></li>
+                    <li><a href="https://github.com/taranumashfaq">Github</a></li>
+                    </ul>
+            </div>     
+
+            <div class="certifications">
+                <h1>Certifications</h1>
+                <ul class="certifications-list">
+                    <li>Python for Everybody Specialization - Coursera</li>
+                    <li><a href="https://coursera.org/share/fda5e17f231960dcc73875eb2ac81e13" target="_blank">View Certificate</a></li>
+                </ul>
+            </div>
+
+            <div class="education">
+                <h1>Education</h1>
+                <ul class="education-list">
+                    <li>Undergraduate  (Computer Science),   SSUET    (Sir Syed University of Engineering and Technology) -currently studying  2026.</li>
+                    <li>Intermediate  (Pre-Engineering)  2025,  Govt Degree Girls College Bufferzone.</li>
+                    <li>Matriculation  (Science)  2023,  (Nasra School).</li>
+                </ul>
+            </div>
+             
+            <ul class="contact">
+                <h1>Contact Me</h1>
+                <li>Email: <a href="mailto:taranumashfaq1@gmail.com" target="_blank">taranumashfaq1@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/taranumashfaq" target="_blank">taranumashfaq</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/taranum-ashfaq-898a71421/" target="_blank">Taranum Ashfaq</a></li>
+                 <li>Facebook: <a href="https://www.facebook.com/profile.php?id=61591980210639" target="_blank">Taranum Ashfaq</a></li>
+            </ul>
+   </section>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software Developer', 'Specializing in Python.'],
+            typeSpeed: 50,
+            showCursor: false,
+        });
+    </script>
+</body>
+
+</html>
